@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="950" viewBox="0 0 1000 950" font-family="Arial, Helvetica, sans-serif" fill="#1B2129">
+<defs>
+<marker id="heranca" markerWidth="16" markerHeight="16" refX="14" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L14,7 L1,13 Z" fill="#fff" stroke="#1B2129" stroke-width="1.4"/></marker>
+<marker id="aberta" markerWidth="14" markerHeight="14" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L11,6 L1,11" fill="none" stroke="#1B2129" stroke-width="1.4"/></marker>
+</defs>
+<rect width="1000" height="950" fill="#ffffff"/>
+<text x="500" y="26" font-size="20" font-weight="bold" font-style="normal" text-anchor="middle">Diagrama de Pacotes (Visão Lógica)</text>
+<path d="M60,66 v-22 h404.0 v22 h476.0 v262 h-880 Z" fill="none" stroke="#1B2129" stroke-width="1.6"/><line x1="60" y1="66" x2="464.0" y2="66" stroke="#1B2129" stroke-width="1.6"/><text x="72" y="60" font-size="13" font-weight="bold" font-style="normal" text-anchor="start">Construção dinâmica das páginas web (React + Vite)</text>
+<path d="M60,422 v-22 h388.79999999999995 v22 h491.20000000000005 v372 h-880 Z" fill="none" stroke="#1B2129" stroke-width="1.6"/><line x1="60" y1="422" x2="448.79999999999995" y2="422" stroke="#1B2129" stroke-width="1.6"/><text x="72" y="416" font-size="13" font-weight="bold" font-style="normal" text-anchor="start">Gestão de pedidos e contratos (Spring Boot, MVC)</text>
+<polyline points="460,122 262,168" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="480,122 372,253" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="525,122 632,253" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="545,112 725,170" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="275,190 725,190" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="250,212 325,253" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="275,205 595,275" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="405,285 595,285" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="650,307 640,380 460,448" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="420,492 420,527" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="385,492 312,618" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="365,482 180,618" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="470,575 640,618" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="435,582 472,712" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="395,582 320,618" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="365,575 195,628" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="475,562 820,628" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="640,672 520,712" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="315,672 440,722" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="175,672 425,738" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="535,735 825,672" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="860,672 860,776 290,776 290,682" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<polyline points="670,672 670,858" fill="none" stroke="#1B2129" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#aberta)"/>
+<text x="660" y="372" font-size="12" font-weight="normal" font-style="normal" text-anchor="start">HTTP/JSON + JWT</text>
+<text x="682" y="830" font-size="12" font-weight="normal" font-style="normal" text-anchor="start">JPA/JDBC</text>
+<g fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"><path d="M590,870 v44 a80,14 0 0 0 160,0 v-44"/><ellipse cx="670" cy="870" rx="80" ry="14"/></g>
+<text x="670" y="906" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">Supabase</text>
+<text x="670" y="924" font-size="12" font-weight="normal" font-style="normal" text-anchor="middle">(PostgreSQL)</text>
+<path d="M445.0,78.0 v-11 h46 v11 h64 v44 h-110 Z" fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"/><line x1="445.0" y1="78.0" x2="491.0" y2="78.0" stroke="#1B2129" stroke-width="1.4"/><text x="500" y="105" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">pages</text>
+<path d="M165.0,168.0 v-11 h46 v11 h64 v44 h-110 Z" fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"/><line x1="165.0" y1="168.0" x2="211.0" y2="168.0" stroke="#1B2129" stroke-width="1.4"/><text x="220" y="195" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">components</text>
+<path d="M725.0,168.0 v-11 h46 v11 h64 v44 h-110 Z" fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"/><line x1="725.0" y1="168.0" x2="771.0" y2="168.0" stroke="#1B2129" stroke-width="1.4"/><text x="780" y="195" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">utils</text>
+<path d="M295.0,263.0 v-11 h46 v11 h64 v44 h-110 Z" fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"/><line x1="295.0" y1="263.0" x2="341.0" y2="263.0" stroke="#1B2129" stroke-width="1.4"/><text x="350" y="290" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">hooks</text>
+<path d="M595.0,263.0 v-11 h46 v11 h64 v44 h-110 Z" fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"/><line x1="595.0" y1="263.0" x2="641.0" y2="263.0" stroke="#1B2129" stroke-width="1.4"/><text x="650" y="290" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">services</text>
+<path d="M365.0,448.0 v-11 h46 v11 h64 v44 h-110 Z" fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"/><line x1="365.0" y1="448.0" x2="411.0" y2="448.0" stroke="#1B2129" stroke-width="1.4"/><text x="420" y="475" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">controller</text>
+<path d="M745.0,448.0 v-11 h46 v11 h64 v44 h-110 Z" fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"/><line x1="745.0" y1="448.0" x2="791.0" y2="448.0" stroke="#1B2129" stroke-width="1.4"/><text x="800" y="475" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">config</text>
+<path d="M365.0,538.0 v-11 h46 v11 h64 v44 h-110 Z" fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"/><line x1="365.0" y1="538.0" x2="411.0" y2="538.0" stroke="#1B2129" stroke-width="1.4"/><text x="420" y="565" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">service</text>
+<path d="M95.0,628.0 v-11 h46 v11 h64 v44 h-110 Z" fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"/><line x1="95.0" y1="628.0" x2="141.0" y2="628.0" stroke="#1B2129" stroke-width="1.4"/><text x="150" y="655" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">security</text>
+<path d="M245.0,628.0 v-11 h46 v11 h64 v44 h-110 Z" fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"/><line x1="245.0" y1="628.0" x2="291.0" y2="628.0" stroke="#1B2129" stroke-width="1.4"/><text x="300" y="655" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">dto</text>
+<path d="M615.0,628.0 v-11 h46 v11 h64 v44 h-110 Z" fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"/><line x1="615.0" y1="628.0" x2="661.0" y2="628.0" stroke="#1B2129" stroke-width="1.4"/><text x="670" y="655" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">repository</text>
+<path d="M805.0,628.0 v-11 h46 v11 h64 v44 h-110 Z" fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"/><line x1="805.0" y1="628.0" x2="851.0" y2="628.0" stroke="#1B2129" stroke-width="1.4"/><text x="860" y="655" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">exception</text>
+<path d="M425.0,723.0 v-11 h46 v11 h64 v44 h-110 Z" fill="#F3F5F9" stroke="#1B2129" stroke-width="1.4"/><line x1="425.0" y1="723.0" x2="471.0" y2="723.0" stroke="#1B2129" stroke-width="1.4"/><text x="480" y="750" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle">model</text>
+</svg>

@@ -33,6 +33,7 @@ Sistema web para efetuar, modificar, cancelar e avaliar pedidos de aluguel de au
 - [Arquitetura](#-arquitetura)
 - [Modelagem](#-modelagem)
 - [Instalação e Execução](#-instalação-e-execução)
+- [Deploy](#-deploy)
 - [Estrutura de Pastas](#-estrutura-de-pastas)
 - [Demonstração](#-demonstração)
 - [Testes](#-testes)
@@ -157,11 +158,11 @@ O sistema segue o enunciado e se divide em dois subsistemas ligados pela interne
 
 ## 📐 Modelagem
 
-Os diagramas são escritos em Mermaid. Os fontes `.mmd` e as imagens ficam em [`docs/modelos/v1`](docs/modelos/v1), junto das [histórias de usuário](docs/modelos/v1/historias-de-usuario.md).
+Os diagramas ficam em [`docs/modelos/v1`](docs/modelos/v1), junto das [histórias de usuário](docs/modelos/v1/historias-de-usuario.md).
 
 ### Diagrama de Casos de Uso
 
-<img src="docs/modelos/v1/casos-de-uso.png" alt="Diagrama de Casos de Uso">
+<img src="docs/modelos/v1/casos-de-uso.svg" alt="Diagrama de Casos de Uso">
 
 ### Diagrama de Classes
 
@@ -169,7 +170,7 @@ Os diagramas são escritos em Mermaid. Os fontes `.mmd` e as imagens ficam em [`
 
 ### Diagrama de Pacotes (Visão Lógica)
 
-<img src="docs/modelos/v1/pacotes.png" alt="Diagrama de Pacotes">
+<img src="docs/modelos/v1/pacotes.svg" alt="Diagrama de Pacotes">
 
 ---
 
@@ -259,6 +260,29 @@ O sistema fica disponível em **http://localhost:5173**.
 2. Crie um cadastro do tipo **Cliente** e faça um pedido.
 3. Entre novamente como **Empresa**, avalie o pedido e execute o contrato.
 4. Crie um cadastro do tipo **Banco** para testar o aluguel com crédito.
+
+---
+
+## 🚀 Deploy
+
+1. **Build dos dois artefatos:**
+
+```bash
+cd frontend
+npm run build
+cd ../backend
+./mvnw clean package
+```
+
+2. **Variáveis de ambiente:** configure no provedor as variáveis do back-end, com `CORS_ORIGINS` apontando para o endereço do front-end, e defina `VITE_API_URL` com a URL pública da API antes do build do front-end.
+
+3. **Execução em produção:**
+
+```bash
+java -jar backend/target/aluguel-carros-1.0.0.jar
+```
+
+Os arquivos de `frontend/dist` são estáticos e podem ser servidos pela Vercel, pelo Netlify ou por outro servidor web.
 
 ---
 
