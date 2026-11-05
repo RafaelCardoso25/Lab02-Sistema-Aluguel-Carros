@@ -1,0 +1,6 @@
+package br.pucminas.aluguelcarros.dto;
+
+import br.pucminas.aluguelcarros.model.Perfil;
+
+public record SessaoResponse(String token, Long id, String nome, Perfil perfil) {
+}
