@@ -43,6 +43,9 @@ public class ContratoService {
         Agente agente = agentes.findById(usuario.id())
                 .orElseThrow(() -> new RecursoNaoEncontradoException("Agente não encontrado."));
         validarTipo(requisicao, agente);
+        if (!pedido.getAutomovel().isDisponivel()) {
+            throw new RegraNegocioException("Este automóvel já pertence a um cliente e não está disponível.");
+        }
         if (pedidos.existeContratoNoPeriodo(pedido.getAutomovel().getId(), pedido.getDataInicio(), pedido.getDataFim(), pedido.getId())) {
             throw new RegraNegocioException("Este automóvel já tem contrato nesse período.");
         }

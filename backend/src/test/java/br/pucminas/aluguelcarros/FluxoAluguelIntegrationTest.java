@@ -157,6 +157,30 @@ class FluxoAluguelIntegrationTest {
     }
 
     @Test
+    void automovelCompradoPorClienteNaoAceitaNovoContrato() throws Exception {
+        cadastrarAgente("locadora", CNPJ_EMPRESA, "EMPRESA");
+        cadastrarCliente("ana", CPF_1, "MG1");
+        cadastrarCliente("bia", CPF_2, "MG2");
+        String tokenEmpresa = entrar("locadora");
+        String automovel = cadastrarAutomovel(tokenEmpresa, "ABC1D23", "MAT1");
+        String pedidoAna = criarPedido(entrar("ana"), automovel);
+        String outroPeriodo = """
+                {"automovelId":%s,"dataInicio":"%s","dataFim":"%s"}""".formatted(
+                automovel, LocalDate.now().plusDays(30), LocalDate.now().plusDays(35));
+        String pedidoBia = id(mvc.perform(autenticado(json(post("/api/pedidos"), outroPeriodo), entrar("bia")))
+                .andExpect(status().isCreated())
+                .andReturn().getResponse().getContentAsString());
+        aprovar(tokenEmpresa, pedidoAna);
+        aprovar(tokenEmpresa, pedidoBia);
+
+        contratar(tokenEmpresa, pedidoAna, "ALUGUEL_COM_COMPRA", null).andExpect(status().isCreated());
+
+        contratar(tokenEmpresa, pedidoBia, "ALUGUEL_SIMPLES", null)
+                .andExpect(status().isConflict())
+                .andExpect(jsonPath("$.mensagem").value("Este automóvel já pertence a um cliente e não está disponível."));
+    }
+
+    @Test
     void clienteCancelaEAgenteModificaPedido() throws Exception {
         cadastrarAgente("locadora", CNPJ_EMPRESA, "EMPRESA");
         cadastrarCliente("ana", CPF_1, "MG1");
